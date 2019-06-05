@@ -22,6 +22,8 @@ import UserPage from "views/Pages/UserPage.jsx";
 import LoginPage from "views/Pages/LoginPage.jsx";
 import RegisterPage from "views/Pages/RegisterPage.jsx";
 import LockScreenPage from "views/Pages/LockScreenPage.jsx";
+//import Purchase to dashboard
+import Purchase from "views/Purchase/Purchase"
 
 var routes = [
   {
@@ -30,6 +32,14 @@ var routes = [
     name: "Dashboard",
     icon: "pe-7s-graph",
     component: Dashboard
+  },
+  {
+    //Purchase to dashboard
+    path: "/purchase",
+    layout: "/admin",
+    name: "Purchase",
+    icon: "pe-7s-rocket",
+    component: Purchase
   },
   {
     collapse: true,
